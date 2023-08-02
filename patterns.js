@@ -118,3 +118,73 @@ function astrikChangeToNumber() {
 }
 
 // astrikChangeToNumber();
+
+
+// Inverted Number Pattern
+
+// 1 2 3 4 5
+// 1 2 3 4
+// 1 2 3
+// 1 2
+// 1
+
+function invertedNumbarPattern(){
+    let n = 5;
+    for(let i=n;i>=1;i--){
+        let pattern ='';
+        // console.log(i)
+        for(let j =1;j<=i;j++){
+            pattern += j +" ";
+        }
+        console.log(pattern);
+    }
+}
+
+// 1
+// 2 3
+// 4 5 6
+// 7 8 9 10
+// 11 12 13 14 15
+
+// invertedNumbarPattern();
+
+function complexNum(){
+    let n =5;
+    let number = 1;
+    for(let i=1;i<=n;i++){
+        let pattern =''
+        for(let j=1;j<=i;j++){
+            pattern += number +" ";
+            number++;
+        }
+        console.log(pattern);
+    }
+}
+
+// complexNum();
+
+// Byte Number Print
+// 1
+// 0 1
+// 1 0 1
+// 0 1 0 1
+// 1 0 1 0 1
+
+function bytePrint(){
+    let n=5;
+    for(let i =1;i<=n;i++){
+    let pattern ='';
+    for(let j=1;j<=i;j++){
+        // console.log(i,j)
+        let sum =i+j;
+        if(sum % 2 ===0){
+            pattern += 1 + " ";
+        }else{
+            pattern += 0 + " ";
+        }
+    }
+    console.log(pattern);
+}
+}
+
+// bytePrint();
