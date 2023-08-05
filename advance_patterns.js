@@ -101,23 +101,57 @@ function PalindromicNum() {
     let pattern = "";
     // for spaces
     for (let j = 1; j <= n - i; j++) {
-      pattern +="  "
+      pattern += "  ";
     }
- //for first half number
+    //for first half number
 
-// tricky part  
- for(let j=i;j>=1;j--){
-  pattern += j + " ";
- }
+    // tricky part
+    for (let j = i; j >= 1; j--) {
+      pattern += j + " ";
+    }
 
- // for another half 
-  for (let j = 2; j <= i; j++) {
-    pattern += j + " ";
-  }
- 
+    // for another half
+    for (let j = 2; j <= i; j++) {
+      pattern += j + " ";
+    }
 
     console.log(pattern);
   }
 }
 
-PalindromicNum();
+// PalindromicNum();
+
+// Diamond Pattern
+
+function diamond() {
+  let n = 5;
+  for (let i = 1; i <= n; i++) {
+    pattern = "";
+    //for Spaces
+    for (let j = 1; j <= n - i; j++) {
+      pattern += "  ";
+    }
+
+    //for Stars
+    for (let j = 1; j <= 2 * i - 1; j++) {
+      pattern += "* ";
+    }
+    console.log(pattern);
+  }
+
+    for (let i = n; i>=1; i--) {
+      pattern = "";
+      //for Spaces
+      for (let j = 1; j <= n - i; j++) {
+        pattern += "  ";
+      }
+
+      //for Stars
+      for (let j = 1; j <= 2 * i - 1; j++) {
+        pattern += "* ";
+      }
+      console.log(pattern);
+    }
+}
+
+diamond();
